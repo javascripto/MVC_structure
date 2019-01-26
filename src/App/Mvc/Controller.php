@@ -6,6 +6,9 @@ class Controller
 {
     public function index()
     {
-        return '';
+        $model = new Model();
+        $view  = new View();
+
+        $view->render($model->getText());
     }
 }
